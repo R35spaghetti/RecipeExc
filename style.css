@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif, Serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #F8E7A8;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #581845;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    object-fit: scale-down;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+
+
+footer {
+    background-color: #581845;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+
+#firstSektion,
+#secondSektion {
+    padding: 15px 10px;
+
+}
+
+#firstSektion {
+    background-color: #FFF9D6;
+    color: #581845;
+}
+
+#secondSektion {
+    background-color: #FFC300;
+    color: #581845;
+}
