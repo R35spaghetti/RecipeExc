@@ -19,24 +19,79 @@ p {
     margin: 15px;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-
-}
-
 footer {
     background-color: #581845;
     color: #FFC300;
 }
 
-
-.image-container {
-    display: grid;
-    grid-template-columns: 15em 15em;
-    justify-items: center;
+header {
+    justify-self: center;
 }
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+}
+
+.carousel-images-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: red;
+    cursor: pointer;
+}
+
+.carousel-arrow.prev {
+    left: 10px;
+}
+
+.carousel-arrow.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: #007bff;
+}
+
 
 .section-container {
     display: grid;
@@ -46,14 +101,11 @@ footer {
 #firstSection,
 #secondSection {
     padding: 5px 10px;
-
-
 }
 
 #firstSection {
     background-color: #FFF9D6;
     color: #581845;
-
 }
 
 #secondSection {
