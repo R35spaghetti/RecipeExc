@@ -38,26 +38,25 @@ footer {
     justify-items: center;
 }
 
-
-.sektion-container {
+.section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#firstSektion,
-#secondSektion {
+#firstSection,
+#secondSection {
     padding: 5px 10px;
 
 
 }
 
-#firstSektion {
+#firstSection {
     background-color: #FFF9D6;
     color: #581845;
 
 }
 
-#secondSektion {
+#secondSection {
     background-color: #FFC300;
     color: #581845;
 }
