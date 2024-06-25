@@ -1,48 +1,68 @@
 body {
-    font-family: 'Arial', sans-serif, Serif;
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
+    font-family: 'Arial', sans-serif, Serif;
+    background-color: #F8E7A8;
     margin: 0;
     padding: 0;
-    background-color: #F8E7A8;
-    overflow: hidden;
+    height: 100vh;
+
 }
 
 h1, h2, h3 {
     color: #581845;
+    margin: 15px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-img {
-    object-fit: scale-down;
-    max-height: 200px;
-    max-width: 100%;
-
+p {
+    margin: 15px;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
 
 footer {
     background-color: #581845;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 5px;
+    color: #FFC300;
 }
 
 
+.image-container {
+    display: grid;
+    grid-template-columns: 15em 15em;
+    justify-items: center;
+}
+
+
+.sektion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 #firstSektion,
 #secondSektion {
-    padding: 15px 10px;
+    padding: 5px 10px;
+
 
 }
 
 #firstSektion {
     background-color: #FFF9D6;
     color: #581845;
+
 }
 
 #secondSektion {
     background-color: #FFC300;
     color: #581845;
+}
+
+#contact-info {
+    color: white;
+    text-align: center;
 }
