@@ -1,11 +1,8 @@
 body {
-    display: grid;
-    grid-template-columns: 1fr;
     font-family: 'Arial', sans-serif, Serif;
     background-color: #F8E7A8;
     margin: 0;
     padding: 0;
-    height: 100vh;
 
 }
 
@@ -25,15 +22,20 @@ footer {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     justify-self: center;
+    align-items: center;
 }
+
 
 .carousel {
     display: flex;
+    flex-direction: column;
     overflow: hidden;
     position: relative;
-    width: 100vw;
-    height: 20vw;
+
+
 }
 
 .carousel-images-container {
@@ -43,15 +45,14 @@ header {
 }
 
 .carousel-item {
-    flex: 0 0 100%;
     display: flex;
+    flex: 0 0 100%;
     justify-content: center;
     align-items: center;
 }
 
 .carousel-item img {
     object-fit: cover;
-    width: 100%;
 }
 
 
@@ -73,29 +74,9 @@ header {
     right: 10px;
 }
 
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.indicator {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background: #007bff;
-}
-
-
 .section-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 #firstSection,
@@ -114,6 +95,7 @@ header {
 }
 
 #contact-info {
+    padding: 5px;
     color: white;
     text-align: center;
 }
